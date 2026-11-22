@@ -1,1 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nina | Supply Chain Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f6f4ef;
+      color: #182b27;
+      font: 1rem/1.65 system-ui, sans-serif;
+    }
+    .container { max-width: 900px; margin: auto; padding: 0 24px; }
+    header { background: #163830; color: white; padding: 28px 0 48px; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+    nav a { color: inherit; text-underline-offset: 4px; }
+    h1 { font: 700 clamp(3rem, 8vw, 5rem) Georgia, serif; margin: 24px 0 8px; }
+    header p { max-width: 620px; margin: 0; font-size: 1.15rem; }
+    main { padding-bottom: 48px; }
+    section { margin-top: 32px; }
+    h2 { font: 700 2rem Georgia, serif; margin: 0 0 16px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; }
+    .skills li { background: #e4eee8; border-radius: 8px; padding: 6px 12px; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      gap: 16px;
+    }
+    article { background: white; border: 1px solid #d7e0da; border-radius: 12px; padding: 22px; }
+    article h3 { margin: 0; line-height: 1.3; }
+    .reference { color: #426055; font-size: 0.9rem; margin: 8px 0; }
+    article p:last-child { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <header id="about">
+    <div class="container">
+      <nav aria-label="Portfolio sections">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </nav>
+      <h1>Nina</h1>
+      <p>I’m a supply chain management student at Rutgers Business School with hands-on experience in shipment documentation, warehouse operations, and customer service.</p>
+    </div>
+  </header>
 
+  <main class="container">
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Incoming materials verification</li>
+        <li>Shipment documentation</li>
+        <li>Warehouse organization</li>
+        <li>Event coordination</li>
+        <li>Customer service</li>
+        <li>Business presentations</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article>
+          <h3>Airport Employee Event Setup</h3>
+          <p class="reference">Da Nang International Airport (AHT) · Summer 2025 internship</p>
+          <p>During my internship, I helped coordinate the setup for an event open to all airport employees.</p>
+        </article>
+
+        <article>
+          <h3>NFL Business Ethics Case Analysis</h3>
+          <p class="reference">Business Ethics · Midterm group presentation</p>
+          <p>My group analyzed an ethical dilemma involving the NFL. I helped apply the Ethical Decision-Making (EDM) framework to the case and presented our analysis in class.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
